@@ -10,16 +10,6 @@
 
     <title>Frontend Mentor | Insure landing page</title>
 
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 
 <body>
@@ -32,7 +22,16 @@
             <li><a href="">Account</a></li>
         </ul>
         <button class="view-plans">View plans</button>
-        <img class="hamb" src="icon-hamburger.svg" alt="hamburger">
+        <img class="hamb" src="icon-hamburger.svg" alt="hamburger" onclick="showMenu()">
+        <div class="menu" id="menu">
+            <h2 class="h2">Menu</h2>
+            <ul class="menu-opt">
+                <li class="items"> <a class="txt" href="">How we work</a></li>
+                <li class="items"><a class="txt" href="">Blog</a></li>
+                <li class="items"><a class="txt" href="">Account</a></li>
+            </ul>
+
+        </div>
     </nav>
 
     <div class="header">
@@ -135,7 +134,15 @@
     </div>
     </div>
 
-
+    <script>
+        function showMenu(){
+            if(document.getElementById("menu").style.display=="block"){
+                document.getElementById("menu").style.display="none";
+            }else{
+                document.getElementById("menu").style.display="block"
+            }
+}
+    </script>
 <!-- 
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Mihir</a>.
