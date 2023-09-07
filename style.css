@@ -386,7 +386,7 @@ a:hover {
             /* display: block; */
             width:300px;
             position: absolute;
-            height: 40vh;
+            height: auto;
             /* transition: 2s; */
             background-color: rgba(52, 37, 57, 0.934);
             color: #fff;
