@@ -597,7 +597,11 @@ Blog css goes here */
 }
 .blg>.icons>p{
     width: 60%;
+<<<<<<< HEAD
     font-size: 25px   ;
+=======
+    font-size: 30px;
+>>>>>>> 39f4ec9f97480596634c5514091cd9b3b1657642
 text-align: justify;}
 .blg>.icons>.blg-img{
     width: 275px;
@@ -756,6 +760,7 @@ Plan page goes here */
     
 }
 @media screen and (max-width:400px) {
+<<<<<<< HEAD
     .blg>.icons:nth-child(even),.blg>.icons:nth-child(odd){
         flex-direction: column;
     }
@@ -768,6 +773,10 @@ Plan page goes here */
         height: 250px;
     }
 
+=======
+  .blg>.icons>p{
+    font-size:20px:}
+>>>>>>> 39f4ec9f97480596634c5514091cd9b3b1657642
 .plan-res{
     flex-direction: column;
 }
