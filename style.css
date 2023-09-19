@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+  min-height: 100vh;
+  width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,25 +18,16 @@
     justify-content: space-between;
     height: 51px;
     padding: 0 100px;
+    background-color: #fff;
     .menu{
         display: none;
     }
     }
        
-        /* padding: 0 5%; */
- 
-
-
-
-    /* .logo {
-        width: 80px;
-        height: 10px;
-    
-    } */
 
 .hamb {
     display: none;
-}
+  }
 
 .unorder {
     display: flex;
@@ -120,8 +118,8 @@ main{
 .right-patt {
     visibility: visible;
     position: absolute;
-    z-index: 2;
-    top: 0;
+    /* z-index: 2; */
+    top: 10%;
     right: 0;
 }
 
@@ -131,11 +129,6 @@ main{
 
 /* ----  header ends  ---- */
 
-
-/* ----  header ends  ---- */
-
-
-/* ----  header ends  ---- */
 
 .main {
     padding: 40px;
@@ -223,11 +216,6 @@ main{
 
 /* ------ F O O T E R -------- */
 
-
-/* ------ F O O T E R -------- */
-
-
-/* ------ F O O T E R -------- */
 
 .footer {
     background-color: hsl(0, 0%, 96%);
@@ -340,38 +328,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* @media all and (max-width:900px) and (min-width:700px) {
-    .navigation {
-        
-    }
-    .logo {
-        width: 70px;
-        height: 10px;
-        top: 35%;
-        left: 50px;
-    }
-    
-    .unorder {
-        right: 30%;
-        width: 150px;
-    }
-    .main {
-        padding: 30px;
-    }
-    .view-plans {
-        width: 13%;
-        top: 25%;
-        bottom: 25%;
-        right: 10%;
-        font-size: .80px;
-    }
-    .about {
-        top: 180px;
-        width: 30%;
-        font-size: 16px;
-        line-height: 1.2;
-    }
-} */
 
 @media all and (max-width:600px) {
     .navigation {
@@ -410,6 +366,7 @@ a:hover {
                     border-left: #fff solid 2px;
                     padding-left: 25px;
                     margin: 30px 0;
+                    z-index: 7;
 
                 }
             }
@@ -543,3 +500,240 @@ padding: 10px 0;
 }
     
 }
+/* Account Page css starts here
+Account Page css starts here */
+/* Account Page css starts here */
+
+
+.acc-main{
+    width: 100%;
+    min-height: 100vh;
+}
+.account-cont{
+/* display: grid;
+place-items: center; */
+display: block;
+margin:  auto;
+  width: 35%;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.account-cont .registration{
+  display: none;
+}
+#check:checked ~ .registration{
+  display: block;
+}
+#check:checked ~ .login{
+  display: none;
+}
+#check{
+  display: none;
+}
+.account-cont .form{
+  padding: 2rem;
+}
+.form header{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+ .form input{
+   height: 60px;
+   width: 100%;
+   padding: 0 15px;
+   font-size: 17px;
+   margin-bottom: 1.3rem;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   outline: none;
+ }
+ .form input:focus{
+   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ }
+.form a{
+  font-size: 16px;
+  color: hsl(256, 26%, 20%);
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+.form input.button{
+  color: #fff;
+  background: hsl(256, 26%, 20%);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1.7rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.form input.button:hover{
+  background: hsl(256, 26%, 20%);
+}
+.signup{
+  font-size: 17px;
+  text-align: center;
+}
+.signup label{
+  color: hsl(256, 26%, 20%);
+  cursor: pointer;
+}
+.signup label:hover{
+  text-decoration: underline;
+}
+/* 
+Blog css goes here
+Blog css goes here
+Blog css goes here */
+.blg{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    
+}
+.blg>.icons>p{
+    width: 60%;
+    font-size: large    ;
+text-align: justify;}
+.blg>.icons>.blg-img{
+    width: 250px;
+    height: 250px;
+}
+.blg>.icons:nth-child(even){
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    color: #fff;
+    background-color: hsla(256, 25%, 20%, 0.776);
+    
+}
+.blg>.icons:nth-child(odd){
+    display: flex;
+    background-color: hsla(256, 25%, 20%, 0.158);
+    
+    flex-direction: row-reverse;
+    /* background-color: aqua; */
+
+}
+
+.blg>.icons{
+    justify-content: space-around;
+    padding: 5%;
+    align-items: center;
+}
+
+/* Plan page goes here
+Plan page goes here
+Plan page goes here */
+.plan-res{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.columns {
+    /* float: left; */
+    width: 30%;
+    padding: 8px;
+    margin: 20px 10;
+  }
+  
+  .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .plan-header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+  .plan-but {
+    background-color: hsla(256, 25%, 20%, 0.849);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    &:hover{
+        color: #fff;
+    }
+  }
+  
+@media screen and (max-width:1000px) {
+    .account-cont{
+        width:60%;
+        height: 60%;
+    }
+}
+@media screen and (max-width:900px) {
+    .account-cont{
+        width:60%;
+        height: 60%;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .account-cont{
+        width:60%;
+        height: 70%;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .plan-res{
+        flex-direction: column;
+
+    }
+    .plan-res>.columns{
+        width: 90%;
+    }
+    .account-cont{
+        width:80%;
+        height: 80%;
+    }
+    
+}
+@media screen and (max-width:400px) {
+.plan-res{
+    flex-direction: column;
+
+}
+   
+.plan-res>.columns{
+    width: 90%;
+}.account-cont{
+        width:90%;
+        height: 90%;
+    }
+    
+}
+
+
+
+
