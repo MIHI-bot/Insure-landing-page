@@ -597,11 +597,12 @@ Blog css goes here */
 }
 .blg>.icons>p{
     width: 60%;
-    font-size: large    ;
+    font-size: 25px   ;
 text-align: justify;}
 .blg>.icons>.blg-img{
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
+    display: block;
 }
 .blg>.icons:nth-child(even){
     display: flex;
@@ -692,6 +693,17 @@ Plan page goes here */
     }
 }
 @media screen and (max-width:900px) {
+    .blg>.icons:nth-child(even),.blg>.icons:nth-child(odd){
+        flex-direction: column;
+    }
+    .blg>.icons>p{
+       width: 95%;
+    }
+    .blg>.icons>.blg-img{
+        width: 500px;
+        height: 500px;
+    }
+
     .account-cont{
         width:60%;
         height: 60%;
@@ -699,6 +711,17 @@ Plan page goes here */
     
 }
 @media screen and (max-width:700px) {
+    .blg>.icons:nth-child(even),.blg>.icons:nth-child(odd){
+        flex-direction: column;
+    }
+    .blg>.icons>p{
+       width: 95%;
+    }
+    .blg>.icons>.blg-img{
+        width: 450px;
+        height: 450px;
+    }
+
     .account-cont{
         width:60%;
         height: 70%;
@@ -706,6 +729,19 @@ Plan page goes here */
     
 }
 @media screen and (max-width:600px) {
+    .blg>.icons:nth-child(even),.blg>.icons:nth-child(odd){
+        flex-direction: column;
+    }
+    .blg>.icons>p{
+       width: 95%;
+       font-size: 25px;
+
+    }
+    .blg>.icons>.blg-img{
+        width: 400px;
+        height: 400px;
+    }
+
     .plan-res{
         flex-direction: column;
 
@@ -720,9 +756,20 @@ Plan page goes here */
     
 }
 @media screen and (max-width:400px) {
+    .blg>.icons:nth-child(even),.blg>.icons:nth-child(odd){
+        flex-direction: column;
+    }
+    .blg>.icons>p{
+       width: 95%;
+       font-size: 20px;
+    }
+    .blg>.icons>.blg-img{
+        width: 250px;
+        height: 250px;
+    }
+
 .plan-res{
     flex-direction: column;
-
 }
    
 .plan-res>.columns{
@@ -732,7 +779,7 @@ Plan page goes here */
         height: 90%;
     }
     
-}
+    }
 
 
 
