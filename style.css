@@ -39,11 +39,10 @@ body{
 }
 
 .view-plans {
-    width: 120px;
-   z-index: 3;
+    min-width: 120px;
+    z-index: 3;
     text-transform: uppercase;
-    height: 30px;
-   
+    height: auto;
     background-color: hsl(0, 0%, 98%);
     border: 2px solid #000;
 }
